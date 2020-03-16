@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul, ol{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+em,i{
+  font-style: normal;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.clearfix:after{
+  display: block;
+  clear: both;
+  content: '';
+  visibility: hidden;
+  height: 0;
+}
+.clearfix{
+  zoom: 1;
+}
+.ivu-table th, .ivu-table td {
+  text-align: center;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;  //使用足够大的纯色内阴影覆盖黄色背景
+  border: 1px solid #CCC!important;
+}
+.addModal {
+  .totalTitle {
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .ivu-modal-content {
+    .ivu-select-disabled .ivu-select-selection {
+      background-color: #fff !important;
+    }
+    .ivu-modal-body {
+      padding: 20px 50px 0;
+      .ivu-form{
+        display: flex;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+        .ivu-form-item {
+          display: flex;
+          width: 50%;
+          .ivu-form-item-label{
+            width: 31%;
+            font-size: 13px;
+          }
+          .ivu-form-item-content {
+            width: 65%;
+          }
+          .ivu-input, .ivu-select,.ivu-select-selection,.ivu-select-placeholder,.ivu-select-selected-value {
+            text-indent: 13px;
+            height: 35px;
+            line-height: 35px;
+          }
+          .ivu-select-item {
+            padding: 6px 10px 6px 0;
+            text-align: center;
+            font-size: 14px!important;
+          }
+        }
+        .checkItemsStyle {
+          .ivu-form-item-label{
+            width: 50%;
+          }
+          .ivu-form-item-content {
+            width: 50%;
+          }
+        }
+        .specital {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .ivu-modal-footer {
+    padding: 40px 24px 40px;
+    text-align: center;
+    .ivu-btn-primary, .ivu-btn-default {
+      width: 25%;
+    }
+    .ivu-btn-text {
+      display: none;
+    }
+  }
+}
+.changeRecord {
+  .ivu-modal-content .ivu-modal-body {
+    padding: 30px 30px 40px;
+  }
+  .ivu-modal-footer {
+    padding: 30px 24px 30px;
+  }
+}
+.addOther {
+  .ivu-modal-body {
+    padding: 20px 24px 0 !important;
+  }
+}
+.modalTips {
+  font-size: 13px;
+  text-align: center;
+}
+.amountClass .ivu-table-cell {
+  text-align: right !important;
+}
+.silverSetting {
+  .ivu-modal-content {
+    .ivu-modal-body {
+      padding: 20px 20px 0;
+      .ivu-form {
+        padding-top: 10px;
+        .ivu-form-item {
+          width: 20%;
+          margin-bottom: 31px;
+          &:first-child {
+            margin-right: 10px;
+          }
+          .ivu-form-item-label {
+            width: 23% !important;
+            padding: 10px 0;
+          }
+          .ivu-form-item-content {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .silverTitle {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    span {
+      width: 18%;
+      margin-left: 24px;
+    }
+  }
+}
+.dateWidth {
+  width: 31% !important;
+}
+.tableTitle {
+  margin: 0 5px 5px;
+  font-weight: bold;
+  font-size: 15px;
+  span {
+    float: right;
+    .ivu-icon {
+      color: #0c91e5;
+      font-size: 26px;
+      margin-right: 8px;
+      cursor: pointer;
+    }
+  }
+  span, .ivu-checkbox-inner {
+     float: none !important;
+  }
+  .handleBtns {
+    float: right !important;
+  }
+  .ivu-select-selection {
+    height: 30px !important;
+    line-height: 30px !important;
+  }
+}
+.searchForm {
+  padding-top: 30px;
+  width: 100%;
+  .ivu-form-item {
+    float: left;
+    display: flex;
+    width: 23%;
+    .ivu-form-item-label {
+      width: 35%;
+      font-size: 13px;
+    }
+    .ivu-form-item-content {
+      width: 65%;
+      .ivu-select-dropdown {
+        text-align: center;
+      }
+      .ivu-input, .ivu-select-selection {
+        text-indent: 13px;
+        font-size: 13px;
+      }
+    }
+  }
+  .ivu-form-item-label {
+    width: 36%;
+  }
+  .form-item-btn{
+    width: 100%;
+    margin: 20px 0 40px;
+    .ivu-form-item-content{
+      width: 100%;
+      text-align: center;
+      .ivu-btn{
+        width: 220px;
+        font-size: 13px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+.table-pager {
+  margin: 15px 0 10px;
+  display: flex;
+  justify-content: flex-end;
+  .ivu-btn{
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+    padding: 0;
+    span{
+      font-size: 14px;
+    }
+  }
+}
+
