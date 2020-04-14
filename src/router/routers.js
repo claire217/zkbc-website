@@ -21,24 +21,13 @@ import parentView from '@/components/parent-view';
 
 export default [
   {
-    path: '/login',
-    name: 'login',
+    path: '/',
+    name: '_home',
+    redirect: 'website',
+    component: Main,
     meta: {
-      title: 'Login - 登录',
-      notCache: true,
       hideInMenu: true
-    },
-    component: () => import('@/view/login/login.vue')
-  },
-  {
-    path: '/phone-screen',
-    name: 'phone-screen',
-    meta: {
-      title: '统计总览',
-      notCache: true,
-      hideInMenu: true
-    },
-    component: () => import('@/view/single-page/phone-screen/phone-screen.vue')
+    }
   },
   {
     path: '/website',
@@ -62,26 +51,6 @@ export default [
     component: () => import('@/view/website/solution.vue')
   },
   {
-    path: '/product-center',
-    name: 'product-center',
-    meta: {
-      title: '产品中心',
-      notCache: true,
-      hideInMenu: true
-    },
-    component: () => import('@/view/website/product-center.vue')
-  },
-  {
-    path: '/classic-case',
-    name: 'solution',
-    meta: {
-      title: '典型案例',
-      notCache: true,
-      hideInMenu: true
-    },
-    component: () => import('@/view/website/solution.vue')
-  },
-  {
     path: '/partner',
     name: 'partner',
     meta: {
@@ -92,16 +61,6 @@ export default [
     component: () => import('@/view/website/partner.vue')
   },
   {
-    path: '/culture',
-    name: 'culture',
-    meta: {
-      title: '企业文化',
-      notCache: true,
-      hideInMenu: true
-    },
-    component: () => import('@/view/website/culture.vue')
-  },
-  {
     path: '/about-us',
     name: 'about-us',
     meta: {
@@ -110,72 +69,6 @@ export default [
       hideInMenu: true
     },
     component: () => import('@/view/website/about-us.vue')
-  },
-  {
-    path: '/',
-    name: '_home',
-    redirect: '/home',
-    component: Main,
-    meta: {
-      hideInMenu: true,
-      title: '首页'
-    },
-    children: [
-      {
-        path: '/home',
-        name: 'home',
-        meta: {
-          hideInMenu: true,
-          title: '首页',
-          notCache: true,
-          icon: 'md-home'
-        },
-        component: () => import('@/view/single-page/home')
-      }
-    ]
-  },
-  {
-    path: '/background-page',
-    name: 'background-page',
-    component: Main,
-    meta: {
-      hideInMenu: true,
-      title: '首页',
-      access: ['super_admin', 'home']
-    },
-    children: [
-      {
-        path: '/background-page',
-        name: 'background-page',
-        meta: {
-          hideInMenu: true,
-          title: '首页',
-          notCache: true,
-          icon: 'md-home',
-          access: ['super_admin', 'home']
-        },
-        component: () => import('@/view/single-page/background-page.vue')
-      }
-    ]
-  },
-  {
-    path: '/editPwd',
-    name: 'editPwd',
-    component: Main,
-    meta: {
-      hideInMenu: true
-    },
-    children: [
-      {
-        path: '/edit-pwd',
-        name: 'edit-pwd',
-        meta: {
-          title: '修改密码',
-          notCache: true
-        },
-        component: () => import('@/view/single-page/edit-pwd/eidt-pwd.vue')
-      }
-    ]
   },
   {
     path: '/401',

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <header-bar @aboutUs="aboutUs" @changeLangue="changeLangue" @dealPlan="dealPlan"
-                @productCenter="productCenter" @calssicCase="calssicCase" @partner="partner" @culture="culture"/>
+    <header-bar @home="home" @dealPlan="dealPlan" @partner="partner" @aboutUs="aboutUs" />
     <footer-part></footer-part>
   </div>
 </template>
@@ -15,14 +14,9 @@ export default {
     };
   },
   methods: {
-    aboutUs () {
+    home () {
       this.$router.push({
-        path: '/about-us'
-      });
-    },
-    changeLangue () {
-      this.$router.push({
-        path: '/about-us'
+        path: '/website'
       });
     },
     dealPlan () {
@@ -30,24 +24,14 @@ export default {
         path: '/solution'
       });
     },
-    productCenter () {
-      this.$router.push({
-        path: '/product-center'
-      });
-    },
-    calssicCase () {
-      this.$router.push({
-        path: '/classic-case'
-      });
-    },
     partner () {
       this.$router.push({
         path: '/partner'
       });
     },
-    culture () {
+    aboutUs () {
       this.$router.push({
-        path: '/culture'
+        path: '/about-us'
       });
     }
   }
